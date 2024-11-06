@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Yu-Gi-Oh! Duel Links</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="game">
+    <h1>Mini Yu-Gi-Oh! Duel Links</h1>
+
+    <div id="playerArea">
+        <div class="player" id="player">
+            <img src="https://static.wikia.nocookie.net/yugioh/images/c/c3/Seto_Kaiba_Anime.png/revision/latest?cb=20200110025050" alt="Seto Kaiba" class="avatar">
+            <div class="health-bar" id="playerHealthBar"></div>
+            <p id="playerStatus">Vida do Jogador: 4000</p>
+        </div>
+        <div class="zone" id="playerMonsterZone">
+            <h3>Zona de Monstros</h3>
+        </div>
+        <div class="zone" id="playerSpellZone">
+            <h3>Zona de Magias</h3>
+        </div>
+    </div>
+
+    <div id="enemyArea">
+        <div class="player" id="enemy">
+            <img src="https://static.wikia.nocookie.net/yugioh/images/8/81/Yugi_Muto_Anime.png/revision/latest?cb=20200110025029" alt="Yugi Muto" class="avatar">
+            <div class="health-bar" id="enemyHealthBar"></div>
+            <p id="enemyStatus">Vida do Inimigo: 4000</p>
+        </div>
+        <div class="zone" id="enemyMonsterZone">
+            <h3>Zona de Monstros</h3>
+        </div>
+        <div class="zone" id="enemySpellZone">
+            <h3>Zona de Magias</h3>
+        </div>
+    </div>
+
+    <div id="deckArea" class="deck">
+        <h3>Deck</h3>
+        <div id="playerDeck" class="zone">
+            <h4>Deck do Jogador</h4>
+        </div>
+    </div>
+
+    <div class="attack-button">
+        <button id="attackBtn">Atacar!</button>
+        <button id="directAttackBtn">Ataque Direto!</button>
+        <button id="endTurnBtn">Terminar Turno</button>
+    </div>
+
+    <div id="playerHand" class="hand"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
